@@ -1,0 +1,43 @@
+﻿<script>
+    $('.datepicker').datepicker({ autoclose: true });
+</script>
+<div class="row">
+    <h1>
+        New Fare</h1>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <form role="form" id="newFareForm">
+        <div class="row">
+            <div class="form-group">
+                <label for="cityInput">
+                    Date</label>
+                <input type="text" class="datepicker form-control" id="DateInput" placeholder="dd-mm-yyyy"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="cityInput">
+                    Customer</label>
+                <select class="form-control bfh-states" id="CustomerSelect" data-country="US" data-state="CA">
+                    <option></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="zipCodeInput">
+                    Driver</label>
+                <select class="form-control bfh-states" id="DriverSelect" data-country="US" data-state="CA">
+                    <option></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="zipCodeInput">
+                    Fare</label>
+                <input type="text" class="form-control" id="FareInput" placeholder="Amount in $"
+                    required>
+            </div>
+            <button type="submit" class="btn btn-success icon large pull-right">
+                Create Fare</button>
+        </div>
+        </form>
+    </div>
+</div>

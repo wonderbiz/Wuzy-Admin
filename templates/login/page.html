@@ -1,0 +1,42 @@
+<div class="login-wrapper">
+    <h1>WUZY PORTAL</h1>
+
+    <div class="box">
+        <div class="content-wrap">
+    <form class="form-signin" role="form" id="loginForm">
+    <h6 id="headingModal" class="form-signin-heading">Sign in</h6>
+    <input type="text" class="form-control" placeholder="Email address" id="usernameInput" value="" required autofocus>
+    <input type="password" class="form-control" placeholder="Password" id="passwordInput" value="" required>
+    <div class="remember">
+        <label class="checkbox">
+        <input type="checkbox" value="remember-me"> Remember me
+        </label>
+    </div>
+        <a href="#" id="forgotPassword" class="forgot">Forgot password?</a>
+    <button id="actionButton" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+</form>
+        </div>
+    </div>
+        <div class="no-account">
+            <p>Don't have an account?</p>
+            <a href="#">Sign up</a>
+        </div>
+</div>
+<!--Custom styling for Login Page -->
+<script language="javascript">
+    var root = document.getElementsByTagName( 'html' )[0]; // '0' to assign the first (and only `HTML` tag)
+    root.setAttribute( "class", "login-bg" );
+<!-- Forgot Password-->
+    $(document).ready(function(){
+
+        console.log("READY");
+    $("#forgotPassword").on("click", function() {
+        //$("#passwordInput").fadeOut(300, function(){ $(this).remove();});
+        //$(".remember").fadeOut(300, function(){ $(this).remove();});
+        //$("#headingModal").html("Recover Password");
+        //$("#actionButton").html("Recover Password");
+        //$("#forgotPassword").fadeOut(300, function(){ $(this).remove();});
+    });
+    });
+</script>
+

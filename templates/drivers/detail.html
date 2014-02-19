@@ -1,0 +1,105 @@
+<!-- Detail Begin -->
+
+        <img src="img/contact-profile.png" alt="contact" class="avatar img-circle" />
+        <h3 class="name"><%=driver.first_name%></h3>
+        <span class="area"><%=driver.last_name%></span>
+
+    <a class="btn btn-danger large pull-right" data-toggle="tooltip" title="Delete user" data-placement="top">
+        <i class="icon-trash"></i>
+    </a>
+    <a class="btn btn-primary icon large pull-right edit">
+        Edit this Venue
+    </a>
+</div>
+
+<div class="row profile">
+    <!-- bio, new note & orders column -->
+    <div class="col-md-9 bio">
+        <div class="profile-box">
+            <!-- biography -->
+            <div class="col-md-12 section">
+                <h6>Description</h6>
+                <p><%=driver.user%></p>
+            </div>
+
+            <h4>Recently Completed Deals</h4>
+            <br>
+            <!-- recent orders table -->
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th class="col-md-2">
+                        Order ID
+                    </th>
+                    <th class="col-md-3">
+                        <span class="line"></span>
+                        Date
+                    </th>
+                    <th class="col-md-3">
+                        <span class="line"></span>
+                        Deal
+                    </th>
+                    <th class="col-md-3">
+                        <span class="line"></span>
+                        Amount
+                    </th>
+                    <th class="col-md-3">
+                        <span class="line"></span>
+                        Test
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- row -->
+                <tr class="first">
+                    <td>
+                        <a href="#">#459</a>
+                    </td>
+                    <td>
+                        Jan 03, 2013
+                    </td>
+                    <td>
+                        Bottle Service
+                    </td>
+                    <td>
+                        $ 3,500.00
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#">#510</a>
+                    </td>
+                    <td>
+                        Feb 22, 2013
+                    </td>
+                    <td>
+                        Check In
+                    </td>
+                    <td>
+                        $ 800.00
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#">#618</a>
+                    </td>
+                    <td>
+                        Jan 03, 2013
+                    </td>
+                    <td>
+                        Dinner
+                    </td>
+                    <td>
+                        $ 3,499.99
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- end main container -->
